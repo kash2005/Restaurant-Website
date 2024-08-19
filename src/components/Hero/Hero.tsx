@@ -1,4 +1,3 @@
-import React from 'react';
 import FoodPng from "../../assets/food.png";
 import Spoon from "../../assets/spoon.png";
 import Banana from "../../assets/banana2.png";
