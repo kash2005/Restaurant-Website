@@ -7,7 +7,7 @@ import { IoCartOutline } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 import { Variants } from 'framer-motion';
 
-export const SlideDown = (delay: number): Variants => {
+export const SlideUp = (delay: number): Variants => {
     return {
         hidden: {
             y: "100%",
@@ -32,26 +32,26 @@ export const Hero = () => {
                 {/* text content here */}
                 <div className='space-y-3 mt-14 text-center md:text-left md:mt-0'>
                     <motion.h1 
-                        variants={SlideDown(0.5)}
+                        variants={SlideUp(0.5)}
                         initial="hidden"
                         whileInView="show"
                         className='relative text-5xl lg:text-7xl xl:text-8xl font-bold uppercase text-outline text-transparent'>Yummy
                         <img src={Leaf} alt='' className='absolute w-[50px] top-0 right-0 md:right-[100px]'/>
                     </motion.h1>
                     <motion.h1 
-                        variants={SlideDown(1)}
+                        variants={SlideUp(1)}
                         initial="hidden"
                         whileInView="show"
                         className='text-5xl lg:text-7xl xl:text-8xl font-bold uppercase'>
                         BREAKFAST
                     </motion.h1>
                     <motion.p 
-                        variants={SlideDown(1.5)}
+                        variants={SlideUp(1.5)}
                         initial="hidden"
                         whileInView="show"
                         className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi deserunt excepturi.</motion.p>
                     <motion.button 
-                        variants={SlideDown(2)}
+                        variants={SlideUp(2)}
                         initial="hidden"
                         whileInView="show"
                         className='btn-primary inline-block !mt-10'>
