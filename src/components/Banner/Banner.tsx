@@ -14,7 +14,7 @@ const Banner = () => {
                     whileInView={{ opacity: 1, x: 0, y: 0}}
                     whileHover={{ scale: 1.2, rotate: 15, x: 50, y: -50}}
                     transition={{ duration: 0.6, delay: 0.5 }}
-                    src={BannerPng} alt="" className="relative z-10 w-full  lg:max-w-[350px] img-shadow"/>
+                    src={BannerPng} alt="" className="relative z-10 w-full lg:max-w-[350px] img-shadow"/>
                     <motion.div
                     initial={{ opacity: 0 }} 
                     whileInView={{ opacity: 1 }}
