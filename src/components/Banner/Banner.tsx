@@ -1,4 +1,4 @@
-import BannerPng from "../../assets/banner.png";
+import Sushi from "../../assets/sushi-pallet.png";
 import { motion } from 'framer-motion';
 import {SlideUp} from '../Hero/Hero';
 
@@ -14,7 +14,7 @@ const Banner = () => {
                     whileInView={{ opacity: 1, x: 0, y: 0}}
                     whileHover={{ scale: 1.2, rotate: 15, x: 50, y: -50}}
                     transition={{ duration: 0.6, delay: 0.5 }}
-                    src={BannerPng} alt="" className="relative z-10 w-full lg:max-w-[350px] img-shadow"/>
+                    src={Sushi} alt="" className="relative z-10 w-full lg:max-w-[350px] img-shadow"/>
                     <motion.div
                     initial={{ opacity: 0 }} 
                     whileInView={{ opacity: 1 }}
@@ -29,14 +29,13 @@ const Banner = () => {
                     initial="hidden"
                     whileInView="show"
                     className="text-6xl uppercase font-semibold font-league">
-                        The best yummy food in the town
+                        Get Up <span className="text-lightYellow">50%</span> offer on Festival Season !
                     </motion.h1>
                     <motion.p
                     variants={SlideUp(1.3)}
                     initial="hidden"
                     whileInView="show">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit saepe hic dolorem quos.
-                    </motion.p> 
+Celebrate the Festival Season with our special offer! Enjoy delicious discounts on your favorite dishes. Don’t miss out—treat yourself today!                    </motion.p> 
                     <motion.button 
                     variants={SlideUp(1.6)}
                     initial="hidden"

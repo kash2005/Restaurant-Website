@@ -1,6 +1,6 @@
-import Food1 from '../../assets/food.png';
-import Food2 from '../../assets/food2-plate.png';
-import Food3 from '../../assets/banner.png';
+import Recipe1 from '../../assets/recipe1.png';
+import Recipe2 from '../../assets/recipe2.png';
+import Recipe3 from '../../assets/recipe3.png';
 import {motion} from 'framer-motion';
 import {SlideUp} from '../Hero/Hero';
 
@@ -15,22 +15,22 @@ interface HotDessertItem {
 const HotDessertData: HotDessertItem[] = [
     {
         id: 1,
-        name: "Hot Cake",
-        img: Food1,
+        name: "Chicken Ramen",
+        img: Recipe1,
         price: "$5.99",
         delay: 0.4
     },
     {
         id: 2,
-        name: "Hot Cake",
-        img: Food2,
+        name: "Sushi",
+        img: Recipe2,
         price: "$5.00",
         delay: 0.8
     },
     {
         id: 3,
-        name: "Hot Cake",
-        img: Food3,
+        name: "Tteokbokki",
+        img: Recipe3,
         price: "$5.99",
         delay: 1.2
     },
@@ -46,7 +46,7 @@ const HotDessert = () => {
             initial="hidden"
             whileInView="show"
             className="text-2xl font-semibold text-darkGreen uppercase py-8">
-                Hot Dessert
+                Hot Menu
             </motion.h3>
 
             {/* grid Section */}
@@ -58,7 +58,7 @@ const HotDessert = () => {
                     whileInView="show"
                     className="group bg-white/50 shadow-md p-3 flex items-center gap-3">
                         <img src={item.img} alt="" 
-                        className="w-24 rounded-full img-shadow group-hover:scale-125 transition-all duration-700 group-hover:rotate-[50deg]" />
+                        className="w-28 rounded-full img-shadow group-hover:scale-125 transition-all duration-700 group-hover:rotate-[50deg]" />
                         <div className="">
                             <h3 className="text-xl font-semibold">{item.name}</h3>
                             <p className='text-xl text-yellow-500'>{item.price}</p>

@@ -1,4 +1,5 @@
 import BannerPng from "../../assets/banner.png";
+import Sushi from "../../assets/sushi-pallet.png";
 import { motion } from 'framer-motion';
 import {SlideUp} from '../Hero/Hero';
 
@@ -9,27 +10,26 @@ const Testimonial = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-14 place-items-center">
                 {/* text content section */}
                 <div className="space-y-5 lg:max-w-[400px]">
-                    <motion.p 
-                    variants={SlideUp(0.4)}
+                <motion.h1 
+                    variants={SlideUp(1)}
                     initial="hidden"
                     whileInView="show"
-                    className="text-xl font-serif relative z-10">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsam expedita architecto 
-                    corporis soluta fugit, consequuntur dolores impedit nam molestiae cumque itaque facere magni minus. Soluta dolor id alias dignissimos!"
-                    </motion.p>
-                    <div className="flex items-center gap-3">
-                        <motion.img 
-                        variants={SlideUp(1)}
-                        initial="hidden"
-                        whileInView="show"
-                        src="https://picsum.photos/id/237/200/300" alt="" className="w-14 h-14 rounded-full object-cover"/>
-                    </div>
-                    <motion.div 
-                    variants={SlideUp(1.2)}
+                    className="text-6xl uppercase font-semibold font-league">
+                        The sushi platter: our most popular dish!
+                    </motion.h1>
+                    <motion.p
+                    variants={SlideUp(1.3)}
                     initial="hidden"
                     whileInView="show">
-                        <h2 className="text-xl font-bold">Kashmi Fernando</h2>
-                        <p className="text-sm">Designation</p>
-                    </motion.div>
+                        Sushi is a Japanese dish of vinegared rice, fresh fish, and toppings, known for its balanced flavors and elegant presentation.
+                    </motion.p> 
+                    <motion.button 
+                    variants={SlideUp(1.6)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="btn-primary">
+                        Order Now
+                    </motion.button>
                 </div>
                 {/* image section */}
                 <div className="relative">
@@ -38,7 +38,7 @@ const Testimonial = () => {
                     whileInView={{ opacity: 1, x: 0, y: 0}}
                     whileHover={{ scale: 1.2, rotate: 15, x: 50, y: -50}}
                     transition={{ duration: 0.6, delay: 0.5 }}
-                    src={BannerPng} alt="" className="relative z-10 w-full  lg:max-w-[280px] img-shadow"/>
+                    src={Sushi} alt="" className="relative z-10 w-full  lg:max-w-[280px] img-shadow"/>
                     <motion.div
                     initial={{ opacity: 0 }} 
                     whileInView={{ opacity: 1 }}

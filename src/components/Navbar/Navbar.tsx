@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from "../../assets/logo.png";
+import Logo4 from "../../assets/logo3.png";
 import { IoCartOutline } from 'react-icons/io5';
 import { Variants } from 'framer-motion';
 import { motion } from 'framer-motion';
@@ -71,7 +72,7 @@ const Navbar: React.FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                src={Logo} alt='' className='w-36'
+                src={Logo} alt='' className='w-40'
             />
             {/* menu section */}
             <div className='hidden md:block'>

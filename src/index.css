@@ -22,7 +22,7 @@
   }
 
   .footer-link{
-    @apply hover:underline hover:text-darkGreen
+    @apply hover:underline hover:text-white
 
   }
 }

@@ -1,7 +1,7 @@
-import FoodPng from "../../assets/food.png";
-import Spoon from "../../assets/spoon.png";
-import Banana from "../../assets/banana2.png";
-import Leaf from "../../assets/leaf.png";
+import RamenPng from "../../assets/ramen.png";
+import ChopSticks from "../../assets/chopsticks.png";
+import SoupSpoon from "../../assets/soup-spoon.png";
+import Chili from "../../assets/chili.png";
 import { IoCartOutline } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 import { Variants } from 'framer-motion';
@@ -34,21 +34,21 @@ export const Hero = () => {
                         variants={SlideUp(0.5)}
                         initial="hidden"
                         whileInView="show"
-                        className='relative text-5xl lg:text-7xl xl:text-8xl font-bold uppercase text-outline text-transparent'>Yummy
-                        <img src={Leaf} alt='' className='absolute w-[50px] top-0 right-0 md:right-[100px]'/>
+                        className='relative text-5xl lg:text-7xl xl:text-8xl font-bold uppercase text-outline text-transparent'>Korean
+                        <img src={Chili} alt='' className='absolute w-[80px] top-0 right-0 md:right-[120px]'/>
                     </motion.h1>
                     <motion.h1 
                         variants={SlideUp(1)}
                         initial="hidden"
                         whileInView="show"
                         className='text-5xl lg:text-7xl xl:text-8xl font-bold uppercase'>
-                        BREAKFAST
+                        Flavors
                     </motion.h1>
                     <motion.p 
                         variants={SlideUp(1.5)}
                         initial="hidden"
                         whileInView="show"
-                        className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi deserunt excepturi.</motion.p>
+                        className='text-sm'>Discover authentic Korean flavors with every dish, where tradition and modern tastes blend seamlessly for a unique experience.</motion.p>
                     <motion.button 
                         variants={SlideUp(2)}
                         initial="hidden"
@@ -64,17 +64,17 @@ export const Hero = () => {
                         initial={{ opacity: 0, rotate: 20, x: 200, y:100}} 
                         whileInView={{ opacity: 1, rotate: 0, x: 0, y: 0}}
                         transition={{ duration: 0.8 }}
-                        src={FoodPng} alt='' className='w-[450px] img-shadow'/>
+                        src={RamenPng} alt='' className='w-[420px] img-shadow'/>
                     <motion.img
                         initial={{ opacity: 0, rotate: 120, x: 200, y:100}} 
-                        whileInView={{ opacity: 1, rotate: 75, x: 0, y: 0}}
+                        whileInView={{ opacity: 1, rotate: 260, x: 0, y: 0}}
                         transition={{ duration: 0.8 }} 
-                        src={Spoon} alt="" className='w-[350px] absolute bottom-[-120px] -left-16 rotate-[75deg] img-shadow'/>
+                        src={SoupSpoon} alt="" className='w-[350px] absolute bottom-[-150px] -left-16 rotate-[260deg] img-shadow'/>
                     <motion.img
                         initial={{ opacity: 0, rotate: 20, x: 200, y:100}} 
-                        whileInView={{ opacity: 1, rotate: 0, x: 0, y: 0}}
+                        whileInView={{ opacity: 1, rotate: 130, x: 0, y: 0}}
                         transition={{ duration: 0.8 }} 
-                        src={Banana} alt="" className='w-[400px] absolute top-[-30px] right-[-130px] md:right-[-160px] img-shadow' />
+                        src={ChopSticks} alt="" className='w-[400px] absolute top-[-100px] right-[-140px] md:right-[-135px] lg:top-[-140px] img-shadow' />
                 </div>
             </div>
         </div>

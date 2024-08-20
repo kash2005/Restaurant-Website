@@ -1,6 +1,6 @@
-import Food1 from '../../assets/food.png';
-import Food2 from '../../assets/food2-plate.png';
-import Food3 from '../../assets/banner.png';
+import Recipe1 from '../../assets/recipe1.png';
+import Recipe2 from '../../assets/recipe2.png';
+import Recipe3 from '../../assets/recipe3.png';
 import {motion} from 'framer-motion';
 import {SlideUp} from '../Hero/Hero';
 
@@ -15,22 +15,22 @@ interface PopularRecipeItem {
 const PopularRecipeData: PopularRecipeItem[] = [
     {
         id: 1,
-        name: "Hot Cake",
-        img: Food1,
+        name: "Chicken Ramen",
+        img: Recipe1,
         price: "$5.99",
         delay: 0.4
     },
     {
         id: 2,
-        name: "Hot Cake",
-        img: Food2,
+        name: "Sushi",
+        img: Recipe2,
         price: "$5.00",
         delay: 0.8
     },
     {
         id: 3,
-        name: "Hot Cake",
-        img: Food3,
+        name: "Tteokbokki",
+        img: Recipe3,
         price: "$5.99",
         delay: 1.2
     },
