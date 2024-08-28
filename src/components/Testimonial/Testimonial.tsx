@@ -1,4 +1,3 @@
-import BannerPng from "../../assets/banner.png";
 import Sushi from "../../assets/sushi-pallet.png";
 import { motion } from 'framer-motion';
 import {SlideUp} from '../Hero/Hero';
