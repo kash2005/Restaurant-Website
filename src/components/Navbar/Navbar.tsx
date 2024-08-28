@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from "../../assets/logo.png";
-import Logo4 from "../../assets/logo3.png";
 import { IoCartOutline } from 'react-icons/io5';
 import { Variants } from 'framer-motion';
 import { motion } from 'framer-motion';
